@@ -44,7 +44,7 @@ tar zxvf OrthancWebViewer-2.6.tar.gz
 rm OrthancWebViewer-2.6.tar.gz
 mkdir OrthancWebViewerBuild
 cd OrthancWebViewerBuild
-cmake /home/bin/OrthancWebViewer-2.5 -DSTATIC_BUILD=ON -DCMAKE_BUILD_TYPE=Release
+cmake /home/bin/OrthancWebViewer-2.6 -DSTATIC_BUILD=ON -DCMAKE_BUILD_TYPE=Release
 make
 rm -rf /home/bin/OrthancWebViewer-2.6
 
@@ -54,7 +54,7 @@ tar zxvf OrthancDicomWeb-1.2.tar.gz
 rm OrthancDicomWeb-1.2.tar.gz
 mkdir DicomWebBuild
 cd DicomWebBuild
-cmake /home/bin/OrthancDicomWeb-1.0 -DSTATIC_BUILD=ON -DCMAKE_BUILD_TYPE=Release
+cmake /home/bin/OrthancDicomWeb-1.2 -DSTATIC_BUILD=ON -DCMAKE_BUILD_TYPE=Release
 make
 rm -rf /home/bin/OrthancDicomWeb-1.2
 
