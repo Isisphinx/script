@@ -12,7 +12,7 @@ tar zxvf Orthanc-1.9.4.tar.gz
 rm Orthanc-1.9.4.tar.gz
 mkdir OrthancBuild
 cd OrthancBuild
-cmake /home/bin/Orthanc-1.9.4 -DALLOW_DOWNLOADS=ON -DUSE_GOOGLE_TEST_DEBIAN_PACKAGE=ON -DUSE_SYSTEM_CIVETWEB=OFF -DDCMTK_LIBRARIES=dcmjpls -DCMAKE_BUILD_TYPE=Release
+cmake /home/bin/Orthanc-1.9.4/OrthancServer -DSTATIC_BUILD=ON -DCMAKE_BUILD_TYPE=Release
 make
 echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 locale-gen
